@@ -154,12 +154,16 @@ span.logo-right-part {
     text-align: center;
     line-height: 1.5;
 }
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
     background-color: var(--ocean);
 }
 /* #endregion */
 
 /* #region  Our Features*/
+.feature-item-title {
+    color: var(--navy-blue);
+}
 .feature-item-description {
     color: var(--slate);
 }
@@ -169,12 +173,16 @@ span.logo-right-part {
 .team {
     background-color: var(--cloud);
 }
+.team-title {
+    color: var(--navy-blue);
+}
 .team-member {
     background-color: var(--white);
 }
 .team-title {
     text-align: center;
     text-transform: capitalize;
+    color: var(--navy-blue)
 }
 .team-member-role {
     color: var(--slate);
@@ -188,7 +196,12 @@ span.logo-right-part {
 /* #region  Our Portfolio*/
 .portfolio-title {
     text-align: center;
-    text-transform: capitalize
+    text-transform: capitalize;
+    color: var(--navy-blue);
+}
+
+.portfolio-item-title {
+    color: var(--navy-blue);
 }
 
 .portfolio-item-tag {
