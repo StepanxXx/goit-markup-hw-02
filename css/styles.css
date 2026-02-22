@@ -75,10 +75,6 @@ address {
     font-style: normal;
 }
 
-img {
-    display: block;
-}
-
 /* #endregion */
 
 /* #region Logo */
@@ -106,7 +102,17 @@ span.logo-right-part {
     letter-spacing: 0.02em;
 }
 
-.adress-block>.address-link {
+.menu-link {
+    font-size: var(--font-size);
+    letter-spacing: 0.02em;
+}
+
+.menu-link {
+    font-size: var(--font-size);
+    letter-spacing: 0.02em;
+}
+
+.address-link {
     font-size: var(--font-size);
     letter-spacing: 0.02em;
     color: var(--slate);
@@ -159,16 +165,18 @@ span.logo-right-part {
     background-color: var(--cloud);
 }
 .team-title {
+    text-align: center;
+    text-transform: capitalize;
     color: var(--navy-blue);
 }
 .team-member {
     background-color: var(--white);
 }
-.team-title {
+.team-member-name {
     text-align: center;
-    text-transform: capitalize;
     color: var(--navy-blue)
 }
+
 .team-member-role {
     color: var(--slate);
 }
