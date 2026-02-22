@@ -21,7 +21,7 @@ body {
     font-family: var(--font-family);
     font-size: var(--font-size);
     font-weight: 400;
-    color: var(--navy-blue);
+    color: var(--slate);
     background-color: var(--white);
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -30,19 +30,22 @@ body {
 h1{
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.07143;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
 }
 
 h2 {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
+    letter-spacing: 0.02em
 }
 
 h3 {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em
 }
 
 a {
@@ -79,7 +82,7 @@ img {
 /* #endregion */
 
 /* #region Common */
-.visually-hidden {
+/* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -90,21 +93,22 @@ img {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     overflow: hidden;
-}
+} */
 /* #endregion */
 
 /* #region Logo */
-.logo {
+.logo-link {
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
+    color: var(--iris);
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
-.logo.logo-left-part {
-    color: var(--iris);
+span.logo-right-part {
+    color: var(--navy-blue);
 }
 
 /* #endregion */
@@ -113,6 +117,14 @@ img {
 .navigation {
     font-weight: 500;
     color: var(--navy-blue);
+    font-size: var(--font-size);
+    letter-spacing: 0.02em;
+}
+
+.adress-block>.address-link {
+    font-size: var(--font-size);
+    letter-spacing: 0.02em;
+    color: var(--slate);
 }
 
 .menu-link:hover,
@@ -136,22 +148,36 @@ img {
 }
 
 .hero-button {
-    background: var(--iris);
+    background-color: var(--iris);
     color: var(--white);
     letter-spacing: 0.04em;
     text-align: center;
+    line-height: 1.5;
 }
 .hero-button:hover {
-    background: var(--ocean);
+    background-color: var(--ocean);
 }
 /* #endregion */
 
-/* #region  Our Team*/
+/* #region  Our Features*/
+.feature-item-description {
+    color: var(--slate);
+}
+/* #endregion */
+
+/* #region Our Team*/
 .team {
     background-color: var(--cloud);
 }
+.team-member {
+    background-color: var(--white);
+}
 .team-title {
     text-align: center;
+    text-transform: capitalize;
+}
+.team-member-role {
+    color: var(--slate);
 }
 .team-member-name,
 .team-member-role {
@@ -162,6 +188,11 @@ img {
 /* #region  Our Portfolio*/
 .portfolio-title {
     text-align: center;
+    text-transform: capitalize
+}
+
+.portfolio-item-tag {
+    color: var(--slate);
 }
 
 .portfolio-item-title,
@@ -171,8 +202,8 @@ img {
 /* #endregion */
 
 /* #region  Footer*/
-.footer,
-.footer a {
+.footer-block,
+.footer-block span.logo-right-part {
     background-color: var(--navy-blue);
     color: var(--cloud);
 }
